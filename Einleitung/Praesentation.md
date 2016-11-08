@@ -31,12 +31,14 @@ class: center, middle
 
 1. Ansible installieren
   * [GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)
+  Testen ob es funktioniert hat:
   ```bash
 rob@teama:~/Desktop$ ansible --version
 ansible 2.2.0.0
   config file = /etc/ansible/ansible.cfg
   configured module search path = Default w/o overrides
   ```
+
 1. 
 
 ---
