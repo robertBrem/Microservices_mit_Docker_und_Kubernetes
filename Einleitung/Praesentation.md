@@ -11,10 +11,8 @@ class: center, middle
 1. Entwickeln & Fragen
 1. Fragen & Entwickeln
 
-.hint[
-  [Link zur Präsentation](https://cdn.rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/Einleitung/Einleitung.html)
-  Pattern: https://cdn.rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/Einleitung/Einleitung.html
-]
+[Link zur Präsentation](https://cdn.rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/Einleitung/Einleitung.html)
+Pattern: https://cdn.rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/Einleitung/Einleitung.html
 
 ---
 
