@@ -30,7 +30,7 @@ class: center, middle
 # Aufgabe
 
 1. Ansible installieren
-  * [GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)
+  * [GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)  
   Testen ob es funktioniert hat:
   ```bash
 rob@teama:~/Desktop$ ansible --version
