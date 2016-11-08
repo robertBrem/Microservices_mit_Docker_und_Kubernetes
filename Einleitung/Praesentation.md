@@ -12,7 +12,7 @@ class: center, middle
 * Fragen & Entwickeln
 
 [Link zur Präsentation](https://rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/Einleitung/Praesentation.html)
-Pattern: https://cdn.rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/
+Pattern: https://rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/
 **Einleitung/Praesentation.html**
 
 ---
