@@ -19,7 +19,7 @@ rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/
 ---
 class: center, middle
 
-# Demo 1
+# Demo
 
 .image-75[
   [![demo](images/demo.png)](http://adesso.disruptor.ninja:30180)
@@ -29,13 +29,15 @@ class: center, middle
 
 # Aufgabe
 
-1. Backup und Restore
-  * Verschiedene Backupstrategien und Backupmedien
-  * Implementation einer Incremental-Forever-Backupstrategie mit Off-Site Backup
-1. Archivierung
-  * Unterschied zwischen Archivierung und Backup.
-  * Rechtliche Implikationen der Datenarchivierung.
-  * Einrichten eines Archivsstorages mit NetApp SnapLock Compliance.
+1. Ansible installieren
+  * [GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)
+  ```bash
+rob@teama:~/Desktop$ ansible --version
+ansible 2.2.0.0
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = Default w/o overrides
+  ```
+1. 
 
 ---
 
