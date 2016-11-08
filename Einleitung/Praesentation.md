@@ -22,7 +22,7 @@ class: center, middle
 # Demo 1
 
 .image-75[
-  ![demo](images/demo.png)
+  [![demo](images/demo.png)](http:://adesso.disruptor.ninja:30180)
 ]
 
 ---
