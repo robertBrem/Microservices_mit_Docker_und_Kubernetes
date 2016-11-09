@@ -27,6 +27,13 @@ class: center
 
 ---
 
+# Aufgabe 0
+
+## Bevorzugte Entwicklungsumgebung aufsetzen
+Seine bevorzugten Entwicklungsumgebung und Tools installieren.
+
+---
+
 # Aufgabe 1
 
 ## REST Service erstellen
@@ -40,26 +47,26 @@ Den REST Service in ein Docker Image verpacken.
 # Aufgabe 2
 
 ## Ansible installieren
-  [GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)  
-  Testen ob es funktioniert hat:
-  ```bash
+[GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)  
+Testen ob es funktioniert hat:
+```bash
 rob@teama:~/Desktop$ ansible --version
 ansible 2.2.0.0
   config file = /etc/ansible/ansible.cfg
   configured module search path = Default w/o overrides
-  ```
+```
 
 ---
 
 # Aufgabe 3
 
 ## Zugangsfiles kopieren
-  `team[A,B,C].pem` und `team[A,B,C].conf` auf den Desktop kopieren.
-  ```bash
+`team[A,B,C].pem` und `team[A,B,C].conf` auf den Desktop kopieren.
+```bash
 chmod 400 team[A,B,C].pem
-  ```
-  Testen ob man auf den Server connecten kann:
-  ```bash
+```
+Testen ob man auf den Server connecten kann:
+```bash
 rob@teama:~/Desktop$ ssh -i team[A,B,C].pem ubuntu@[MASTER:IP]
 The authenticity of host '[MASTER:IP] ([MASTER:IP])' can't be established.
 ECDSA key fingerprint is SHA256:1WuIoToQUhYCeco87+tanj5trGe+UUH4SYwh9pfzHTk.
@@ -72,22 +79,21 @@ ubuntu@ip-172-30-0-70:~$
   ``` 
 ---
   
-  `kubectl` von Master Server auf den Desktop kopieren.
-  ```bash
-  scp -i team[A,B,C].pem ubuntu@[MASTER:IP]:/usr/bin/kubectl .
-  ```
-  Alias für `kubectl` erstellen:
-  ```bash
-  alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
-  ```
-  Testen ob man die Kubernetes Nodes sieht:
-  ```bash
-  rob@teama:~/Desktop$ kc get no
+`kubectl` von Master Server auf den Desktop kopieren.
+```bash
+scp -i team[A,B,C].pem ubuntu@[MASTER:IP]:/usr/bin/kubectl .
+```
+Alias für `kubectl` erstellen:
+```bash
+alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
+```
+Testen ob man die Kubernetes Nodes sieht:
+```bash
+rob@teama:~/Desktop$ kc get no
 NAME             STATUS    AGE
 ip-172-30-0-68   Ready     2h
 ip-172-30-0-69   Ready     2h
 ip-172-30-0-70   Ready     2h
 ip-172-30-0-71   Ready     2h
-
-  ```
+```
 
