@@ -29,6 +29,16 @@ class: center
 
 # Aufgabe 1
 
+## REST Service erstellen
+Einen REST Service mit seiner bevorzugten Programmiersprache implementieren.
+
+## Applikation Dockerisieren
+Den REST Service in ein Docker Image verpacken.
+
+---
+
+# Aufgabe 2
+
 ## Ansible installieren
   [GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)  
   Testen ob es funktioniert hat:
@@ -41,7 +51,7 @@ ansible 2.2.0.0
 
 ---
 
-# Aufgabe 2
+# Aufgabe 3
 
 ## Zugangsfiles kopieren
   `team[A,B,C].pem` und `team[A,B,C].conf` auf den Desktop kopieren.
@@ -68,7 +78,7 @@ ubuntu@ip-172-30-0-70:~$
   ```
   Alias für `kubectl` erstellen:
   ```bash
-  alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/teamA.conf'
+  alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
   ```
   Testen ob man die Kubernetes Nodes sieht:
   ```bash
@@ -81,43 +91,3 @@ ip-172-30-0-71   Ready     2h
 
   ```
 
----
-
-# Voraussetzungen
-
-## Wissen
-* Linux/Bash Basics (cd, rm, mv etc.)
-* Git Basics (clone, pull etc.)
-* Texteditor (vim, emacs oder nano)
-* Englisch
-
----
-
-# Voraussetzungen
-
-## Software
-* (Natives Linux)
-* [Oracle VirtualBox](https://www.virtualbox.org/)
-* [Vagrant](https://www.vagrantup.com/downloads.html)
-* [Git](https://git-scm.com/)
-
----
-
-# Prüfungen/Tests
-
-* 2 Tests
-* Art: TBD
-* Mögliche Daten:
-  * 12. März (ev. 19. März)
-  * 30. April
-  * 21. Mai
-
----
-
-# Administratives
-
-* Unterlagen
-  * Übungen: [http://icedaq.github.io/tsbe-architektur/](http://icedaq.github.io/tsbe-architektur/)
-  * Präsentationen und Files: [https://github.com/icedaq/tsbe-architektur](https://github.com/icedaq/tsbe-architektur)
-  * Präsentationen online anschauen ("partX" entsprechend anpassen): [https://cdn.rawgit.com/icedaq/tsbe-architektur/master/partX/presentation/remark.html](https://cdn.rawgit.com/icedaq/tsbe-architektur/master/part0/presentation/remark.html#1)
-* E-Mail Adressen
