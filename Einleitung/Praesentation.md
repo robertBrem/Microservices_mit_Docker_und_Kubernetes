@@ -46,11 +46,11 @@ ansible 2.2.0.0
 ## Zugangsfiles kopieren
   `team[A,B,C].pem` und `team[A,B,C].conf` auf den Desktop kopieren.
   ```bash
-  chmod 400 team[A,B,C].pem
+chmod 400 team[A,B,C].pem
   ```
   Testen ob man auf den Server connecten kann:
   ```bash
-  rob@teama:~/Desktop$ ssh -i team[A,B,C].pem ubuntu@[MASTER:IP]
+rob@teama:~/Desktop$ ssh -i team[A,B,C].pem ubuntu@[MASTER:IP]
 The authenticity of host '[MASTER:IP] ([MASTER:IP])' can't be established.
 ECDSA key fingerprint is SHA256:1WuIoToQUhYCeco87+tanj5trGe+UUH4SYwh9pfzHTk.
 Are you sure you want to continue connecting (yes/no)? yes
@@ -60,6 +60,8 @@ Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
 Last login: Wed Nov  9 08:46:56 2016 from 62.2.43.87
 ubuntu@ip-172-30-0-70:~$ 
   ``` 
+---
+  
   `kubectl` von Master Server auf den Desktop kopieren.
   ```bash
   scp -i team[A,B,C].pem ubuntu@[MASTER:IP]:/usr/bin/kubectl .
