@@ -29,6 +29,28 @@ class: center
 
 # Aufgabe 0
 
+## Ansible installieren
+[GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)  
+Testen ob es funktioniert hat:
+```bash
+rob@teama:~/Desktop$ ansible --version
+ansible 2.2.0.0
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = Default w/o overrides
+```
+Git installieren:
+```bash
+sudo apt-get update && sudo apt-get install git -y
+```
+Ansible Repository für diesen Kurs clonen.
+```bash
+git clone https://github.com/robertBrem/Microservices_Ansible_Setup
+```
+
+---
+
+# Aufgabe 0
+
 ## Bevorzugte Entwicklungsumgebung aufsetzen
 Seine bevorzugten Entwicklungsumgebung und Tools installieren.
 
@@ -41,20 +63,6 @@ Einen REST Service mit seiner bevorzugten Programmiersprache implementieren.
 
 ## Applikation Dockerisieren
 Den REST Service in ein Docker Image verpacken.
-
----
-
-# Aufgabe 2
-
-## Ansible installieren
-[GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)  
-Testen ob es funktioniert hat:
-```bash
-rob@teama:~/Desktop$ ansible --version
-ansible 2.2.0.0
-  config file = /etc/ansible/ansible.cfg
-  configured module search path = Default w/o overrides
-```
 
 ---
 
