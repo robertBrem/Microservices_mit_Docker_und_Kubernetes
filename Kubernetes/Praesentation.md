@@ -53,4 +53,30 @@ ip-172-30-0-71   Ready     2h
 
 # Aufgabe 2
 
-## Applikation Kubernetisieren
+## Gogs im Cluster starten
+Den Nodes Labels zuweisen:
+```bash
+kc label nodes ip-172-30-0-68 name=node68
+```
+Per SSH auf den entsprechenden Node zugreifen:
+```bash
+ssh -i "team[A,B,C].pem" ubuntu@[PUBLIC_IP]
+```
+Folgende Ordnerstruktur im Home-Verzeichnis anlegen:
+```bash
+gogs/data
+```
+
+---
+
+Kubernetes-Deployment analog zu [GIST](https://gist.github.com/robertBrem/31b7ad46c8ee531c8dcd575989454825) erstellen.  
+Deployment starten:
+```bash
+kc create -f deployments/gogs.yml
+```
+Überprüfen ob das Deployment funktioniert hat:
+```bash
+rob@teama:~/Desktop$ kc get pods
+NAME                    READY     STATUS    RESTARTS   AGE
+gogs-1417829598-rr88g   1/1       Running   0          <invalid>
+```
