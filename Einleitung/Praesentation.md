@@ -55,7 +55,7 @@ git clone https://github.com/robertBrem/Microservices_Ansible_Setup
 ```
 Im File `playbooks/basicSetUp.yml` die Tools die man nicht installieren möchte kommentieren (`#`). Danach die Installation starten:
 ```bash
-sudo ansible-playbook playbooks/basicSetUp.yml
+ansible-playbook playbooks/basicSetUp.yml
 ```
 
 ---
