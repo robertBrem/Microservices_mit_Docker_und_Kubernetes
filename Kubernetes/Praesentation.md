@@ -80,3 +80,12 @@ rob@teama:~/Desktop$ kc get pods
 NAME                    READY     STATUS    RESTARTS   AGE
 gogs-1417829598-rr88g   1/1       Running   0          <invalid>
 ```
+
+---
+
+Kubernetes-Service analog zu [GIST](https://gist.github.com/robertBrem/68706f161388b7307bb0) erstellen.  
+Service starten:
+```bash
+kc create -f services/gogs.yml
+```
+Gogs einrichten.
