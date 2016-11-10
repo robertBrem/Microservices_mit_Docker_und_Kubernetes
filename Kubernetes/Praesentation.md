@@ -29,10 +29,16 @@ File `.alias` im Home-Verzeichnis des Users erstellen mit folgendem Inhalt:
 ```bash
 alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
 ```
-
+`.bashrc` des Home-Verzeichnisses um folgende Zeile erweitern:
 ```bash
-alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
+. ~/.alias
 ```
+Danach den `alias` in der aktuellen Bash ausführen:
+```bash
+. .alias
+```
+---
+ 
 Testen ob man die Kubernetes Nodes sieht:
 ```bash
 rob@teama:~/Desktop$ kc get no
