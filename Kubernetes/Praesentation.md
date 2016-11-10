@@ -1,3 +1,9 @@
+# Aufgabe 0
+VMs in der Cloud aufsetzten, beispielsweise bei AWS.  
+Folgendes Ansible-Playbook von [Github](https://github.com/pstauffer/kubernetes-setup) herunterladen und ausführen.
+
+---
+
 # Aufgabe 1
 
 ## Cluster aufsetzen
