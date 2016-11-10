@@ -37,3 +37,9 @@ ip-172-30-0-69   Ready     2h
 ip-172-30-0-70   Ready     2h
 ip-172-30-0-71   Ready     2h
 ```
+
+---
+
+# Aufgabe 2
+
+## Applikation Kubernetisieren
