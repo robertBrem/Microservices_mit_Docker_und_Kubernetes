@@ -7,7 +7,7 @@ docker build -t robertbrem/cars:1.0.0 .
 ```
 Einen Docker Container auf einem anderen Port starten:
 ```bash
-docker run -d 8081:8080 --name cars robertbrem/cars:1.0.0
+docker run -d -p 8081:8080 --name cars robertbrem/cars:1.0.0
 ```
 Die Applikation testen:
 ```bash
