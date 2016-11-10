@@ -48,7 +48,8 @@ sudo apt-get update && sudo apt-get install git -y
 # Aufgabe 0
 
 ## Bevorzugte Entwicklungsumgebung aufsetzen
-Seine bevorzugten Entwicklungsumgebung und Tools installieren, z.B. Ansible Repository für diesen Kurs clonen.
+Seine bevorzugten Entwicklungsumgebung und Tools installieren, z.B. mit Ansible:  
+Ansible Repository für diesen Kurs clonen.
 ```bash
 git clone https://github.com/robertBrem/Microservices_Ansible_Setup
 ```
