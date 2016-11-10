@@ -25,6 +25,11 @@ ubuntu@ip-172-30-0-70:~$
 scp -i team[A,B,C].pem ubuntu@[MASTER:IP]:/usr/bin/kubectl .
 ```
 Alias für `kubectl` erstellen:
+File `.alias` im Home-Verzeichnis des Users erstellen mit folgendem Inhalt:
+```bash
+alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
+```
+
 ```bash
 alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
 ```
