@@ -63,4 +63,5 @@ sudo ansible-playbook playbooks/basicSetUp.yml
 # Aufgabe 3
 
 ## REST Service erstellen
-Einen REST Service mit seiner bevorzugten Programmiersprache und Framework implementieren.
+Einen REST Service mit seiner bevorzugten Programmiersprache und Framework implementieren.  
+Ich verwende folgenden Archetype: `com.airhacks:javaee7-essentials-archetype:1.3`
