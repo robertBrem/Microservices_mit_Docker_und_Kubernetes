@@ -27,7 +27,7 @@ class: center
 
 ---
 
-# Aufgabe 0
+# Aufgabe 1
 
 ## Basic Tools installieren
 [GIST](https://gist.github.com/robertBrem/2b382911e967692e240f)  
@@ -45,7 +45,7 @@ sudo apt-get update && sudo apt-get install git -y
 
 ---
 
-# Aufgabe 0
+# Aufgabe 2
 
 ## Bevorzugte Entwicklungsumgebung aufsetzen
 Seine bevorzugten Entwicklungsumgebung und Tools installieren, z.B. mit Ansible:  
@@ -60,7 +60,7 @@ sudo ansible-playbook playbooks/basicSetUp.yml
 
 ---
 
-# Aufgabe 1
+# Aufgabe 3
 
 ## REST Service erstellen
-Einen REST Service mit seiner bevorzugten Programmiersprache implementieren.
+Einen REST Service mit seiner bevorzugten Programmiersprache und Framework implementieren.
