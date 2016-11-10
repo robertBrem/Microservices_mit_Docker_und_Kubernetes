@@ -88,4 +88,6 @@ Service starten:
 ```bash
 kc create -f services/gogs.yml
 ```
-Gogs einrichten.
+* Gogs einrichten
+* Repository einrichten
+* Den REST Service ins Repository pushen
