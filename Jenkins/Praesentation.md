@@ -40,4 +40,8 @@ Die erste Stage der Jenkins Pipeline für den REST Service erstellen - `git pull
 Als Vorlage kann [dieses Script](https://gist.github.com/robertBrem/b18dee521176a3d75026cbe902d16b2f) verwendet werden.
 
 ## Bei jedem Push Pipeline starten
-Jenkins so einrichten, dass es bei jedem git push die Pipeline startet.
+Jenkins so einrichten, dass es bei jedem git push die Pipeline startet.  
+Beispiel Payload URL:
+```bash
+http://rob:[JENKINS:TOKEN]@adesso.disruptor.ninja:30180/job/hero-command/build?token=test
+```
