@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Praesentation</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+      @import url(https://fonts.googleapis.com/css?family=Montserrat);
+      @import url(https://fonts.googleapis.com/css?family=Neuton);
+
+      body { font-family: 'Neuton'; }
+      h1, h2, h3 {
+        font-family: 'Montserrat';
+        font-weight: normal;
+      }
+    }
+    .image-50 img {
+      width: 50%;
+    }
+    .image-40 img {
+      width: 40%;
+    }
+    .image-25 img {
+      width: 25%;
+    }
+    .image-10 img {
+      width: 10%;
+    }
+    .image-75 img {
+      width: 75%;
+    }
+    .bottomimage-20 {
+      position: absolute;
+      height: 20%;
+      min-width: 100%;
+      max-width: 100%;
+      bottom: 3em;
+      left: 0;
+    }
+    .bottomimage-40 {
+      position: absolute;
+      height: 40%;
+      min-width: 100%;
+      max-width: 100%;
+      bottom: 3em;
+      left: 0;
+    }
+    .bottomimage-40 img, .bottomimage-20 img
+    {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+      .remark-code, .remark-inline-code { font-family: 'Inconsolata'; }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.rawgit.com/gnab/remark/gh-pages/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create({
+            sourceUrl: 'Praesentation.md'
+      });
+    </script>
+  </body>
+</html>
