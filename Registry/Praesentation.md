@@ -29,3 +29,14 @@ sudo cp /etc/letsencrypt/live/teama.disruptor.ninja/privkey.pem registry/certs/
 
 ---
 
+Hat man das Deployment und den Service gestartet kann man das Repository mit folgender URL testen:
+```bash
+https://teama.disruptor.ninja:30500/v2/_catalog
+```
+
+---
+
+# Aufgabe 2
+
+## Docker Image in Repository pushen
+Nach jedem Build der Jenkins Pipeline soll ein neues Dockerimage erstellt werden und dieses soll dann in unsere Registry gepushed werden.
