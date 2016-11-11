@@ -30,3 +30,10 @@ Danach wechselt man wieder aud den lokalen Host und fährt das Deployment runter
 kc delete deployment jenkins
 ```
 Kommentier das `jenkins_home` Volume wieder ein und startet das Deployment und den Service.
+
+---
+
+# Aufgabe 2
+
+## Jenkins Pipeline mit REST Service erstellen
+Die erste Stage der Jenkins Pipeline für den REST Service erstellen - `git pull`, `mvn clean install` und gegebenenfalls die JUnit-Testergebnisse veröffentlichen.
