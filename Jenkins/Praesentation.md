@@ -45,3 +45,11 @@ Beispiel Payload URL:
 ```bash
 http://rob:[JENKINS:TOKEN]@adesso.disruptor.ninja:30180/job/hero-command/build?token=test
 ```
+## JUnit Test einfügen
+Man kann seine in IntelliJ erstellen Live Templates wie folgt in ein neues IntelliJ importieren:
+```bash
+cd ~/.IntelliJIdea2016.2/config/
+git clone https://github.com/robertBrem/IntelliJ_Live_Templates
+mv IntelliJ_Live_Templates/ templates
+```
+Nach einem Neustart von IntelliJ hat man alle seine Live Templates, wie z.B. die Maven JUnit Dependency. 
