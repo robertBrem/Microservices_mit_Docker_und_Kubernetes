@@ -38,3 +38,6 @@ Kommentier das `jenkins_home` Volume wieder ein und startet das Deployment und d
 ## Jenkins Pipeline mit REST Service erstellen
 Die erste Stage der Jenkins Pipeline für den REST Service erstellen - `git pull`, `mvn clean install` und gegebenenfalls die JUnit-Testergebnisse veröffentlichen.  
 Als Vorlage kann [dieses Script](https://gist.github.com/robertBrem/b18dee521176a3d75026cbe902d16b2f) verwendet werden.
+
+## Bei jedem Push Pipeline starten
+Jenkins so einrichten, dass es bei jedem git push die Pipeline startet.
