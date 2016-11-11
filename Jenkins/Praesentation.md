@@ -21,8 +21,12 @@ Nun Kopiert man den `jenkins_home` Folder auf den Node und benennt ihn entsprech
 sudo docker cp cb435aac4587:/var/jenkins_home .
 mv jenkins_home/ jenkins-home
 ```
-Jetzt fährt man das Deployment wieder runter:
+Nun muss man noch die Berechtigungen des Folders und der Dateien auf dem Node anpassen:
+```bash
+sudo chown -R 1000:1000 jenkins-home/
+```
+Danach wechselt man wieder aud den lokalen Host und fährt das Deployment runter:
 ```bash
 kc delete deployment jenkins
 ```
-Kommentiert das `jenkins_home` Volume wieder ein und startet das Deployment und den Service.
+Kommentier das `jenkins_home` Volume wieder ein und startet das Deployment und den Service.
