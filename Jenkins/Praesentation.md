@@ -45,6 +45,8 @@ Beispiel Payload URL:
 ```bash
 http://rob:[JENKINS:TOKEN]@adesso.disruptor.ninja:30180/job/hero-command/build?token=test
 ```
+---
+
 ## JUnit Test einfügen
 Man kann seine in IntelliJ erstellen Live Templates wie folgt in ein neues IntelliJ importieren:
 ```bash
