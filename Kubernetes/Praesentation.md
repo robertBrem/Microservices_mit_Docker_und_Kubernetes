@@ -7,8 +7,7 @@ Folgendes Ansible-Playbook von [Github](https://github.com/pstauffer/kubernetes-
 # Aufgabe 1
 
 ## Cluster aufsetzen
-Zugangsfiles kopieren
-`team[A,B,C].pem` und `team[A,B,C].conf` auf den Desktop kopieren.
+Key `team[A,B,C].pem` uf den Desktop kopieren.
 ```bash
 chmod 400 team[A,B,C].pem
 ```
@@ -25,15 +24,29 @@ Last login: Wed Nov  9 08:46:56 2016 from 62.2.43.87
 ubuntu@ip-172-30-0-70:~$ 
   ``` 
 ---
-  
+
 `kubectl` von Master Server auf den Desktop kopieren.
 ```bash
 scp -i team[A,B,C].pem ubuntu@[MASTER:IP]:/usr/bin/kubectl .
 ```
+`admin.conf` vom Master Server auf den Desktop kopieren.
+```bash
+ssh -i team[A,B,C].pem ubuntu@[MASTER:IP]
+ubuntu@MASTER:~# sudo su -
+root@MASTER:~# cp /etc/kubernetes/admin.conf /home/ubuntu
+root@MASTER:~# chown ubuntu /home/ubuntu/admin.conf
+root@MASTER:~# exit
+ubuntu@MASTER:~# exit
+scp -i team[A,B,C].pem ubuntu@[MASTER:IP]:/home/ubuntu/admin.conf .
+```
+
+---
+
+
 Alias für `kubectl` erstellen:  
 File `.alias` im Home-Verzeichnis des Users erstellen mit folgendem Inhalt:
 ```bash
-alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/team[A,B,C].conf'
+alias kc='/home/rob/Desktop/kubectl --kubeconfig /home/rob/Desktop/admin.conf'
 ```
 `.bashrc` des Home-Verzeichnisses um folgende Zeile erweitern:
 ```bash
