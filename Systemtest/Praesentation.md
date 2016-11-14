@@ -20,3 +20,12 @@ Man kann in Nashorn Java-Klassen verwenden wie z.B. den `FileWriter`:
 ```javascript
 var FileWriter = Java.type("java.io.FileWriter");
 ```
+Verwendet man ein geschütztes Repository muss man die Login-Informationen dem Kubernetes Cluster zur Verfügung stellen. Dafür gibt es in Kubernetes Secrets:
+```bash
+kubectl create secret docker-registry teamakey --docker-username=rob --docker-password=1234 --docker-email=robert.brem@adesso.ch --docker-server=teama.disruptor.ninja:30500
+```
+Nun muss man noch dem Deplyoment dieses Secret mitteilen:
+```yaml
+imagePullSecrets:
+- name: teamakey
+```
