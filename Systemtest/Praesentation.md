@@ -29,3 +29,13 @@ Nun muss man noch dem Deplyoment dieses Secret mitteilen:
 imagePullSecrets:
 - name: teamakey
 ```
+Folgendes Script kann dazu verwendet werden zu prüfen ob eine URL verfügbar ist:
+```bash
+var testUrl = "curl --write-out %{http_code} --silent --output /dev/null http://teama.disruptor.ninja:31080/cars/resources/cars --max-time 2";
+$EXEC(testUrl);
+while ($OUT != "200") {
+    $EXEC("sleep 1");
+    $EXEC(testUrl);
+    print($OUT);
+}
+```
