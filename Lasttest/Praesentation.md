@@ -16,6 +16,8 @@ Rechtsklick auf *Thread Group* *Add -> Sampler -> HTTP Request*
 *Port Number:* **31080**  
 *Path:* **/cars/resources/cars**  
 
+---
+
 Rechtsklick auf *Thread Group* *Add -> Listener -> Summary Report*  
 
 *Start*
