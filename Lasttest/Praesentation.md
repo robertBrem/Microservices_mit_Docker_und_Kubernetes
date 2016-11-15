@@ -44,3 +44,7 @@ mvn clean verify -Dperformancetest.webservice.host=teama.disruptor.ninja -Dperfo
 # Aufgabe 3
 
 ## Den Last Test in die Pipeline einbauen
+Da das `Performance Plugin` für die Jenkins Pipeline noch nicht fertig gestellt ist, müssen wir die Reporte archivieren:
+```groovy
+archiveArtifacts artifacts: 'target/reports/*.*', fingerprint: true
+```
