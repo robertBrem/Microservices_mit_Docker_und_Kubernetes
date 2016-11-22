@@ -1,5 +1,6 @@
 # Aufgabe 1
-Dashboard einrichten.  
+
+## Dashboard einrichten.  
 ```bash
 kc create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
 ```
@@ -21,5 +22,15 @@ er ist nicht im Internet verfügbar sondern nur auf seinem lokalen Host.
 ## Monitoring mit Prometheus
 Monitoring mit Prometheus einrichten.  
 ```bash
-kc create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
+kc create -f https://raw.githubusercontent.com/coreos/blog-examples/master/monitoring-kubernetes-with-prometheus/prometheus.yml
+```
+Danach einen Service für Prometheus einrichten.
+
+# Aufgabe 3
+
+## Scope einsetzen
+EInen User auf ... erstellen.  
+Danach das Addon im Cluster installieren:
+```bash
+kc apply -f 'https://cloud.weave.works/launch/k8s/weavescope.yaml?service-token=t3aq5zi4pgez9o5gf5rzxna1zxwca9cw'
 ```
