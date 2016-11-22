@@ -42,7 +42,7 @@ https://teama.disruptor.ninja:30500/v2/_catalog
 # Aufgabe 2
 
 ## Docker Image in Repository pushen
-Nach jedem Build der Jenkins Pipeline soll ein neues Dockerimage erstellt werden und dieses soll dann in unsere Registry gepushed werden.
+Nach jedem Build der Jenkins Pipeline soll ein neues Dockerimage erstellt werden und dieses soll dann in die Registry gepushed werden.
 
 ---
 
