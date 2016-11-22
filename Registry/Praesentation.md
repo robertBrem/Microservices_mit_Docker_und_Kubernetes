@@ -24,7 +24,7 @@ Die Zerfifkate werden dann in folgendem Folder abgelegt:
 ```bash
 /etc/letsencrypt/live/teama.disruptor.ninja
 ```
-Den `fullchain.pem`und den `privkey.pem` verschiebt man nun in den `registry/certs` Folder.
+Den `fullchain.pem` und den `privkey.pem` verschiebt man nun in den `registry/certs` Folder.
 ```bash
 sudo cp /etc/letsencrypt/live/teama.disruptor.ninja/fullchain.pem registry/certs/
 sudo cp /etc/letsencrypt/live/teama.disruptor.ninja/privkey.pem registry/certs/
