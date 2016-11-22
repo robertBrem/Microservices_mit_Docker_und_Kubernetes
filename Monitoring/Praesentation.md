@@ -26,6 +26,8 @@ kc create -f https://raw.githubusercontent.com/coreos/blog-examples/master/monit
 ```
 Danach einen Service für Prometheus einrichten.
 
+---
+
 # Aufgabe 3
 
 ## Scope einsetzen
