@@ -34,5 +34,5 @@ Danach einen Service für Prometheus einrichten.
 Einen User auf [cloud.weave.works](https://cloud.weave.works) erstellen.  
 Danach das Addon im Cluster installieren:
 ```bash
-kc apply -f 'https://cloud.weave.works/launch/k8s/weavescope.yaml?service-token=t3aq5zi4pgez9o5gf5rzxna1zxwca9cw'
+kc apply -f 'https://cloud.weave.works/launch/k8s/weavescope.yaml?service-token=[TOKEN]'
 ```
