@@ -2,7 +2,10 @@
 
 ## Registry einrichten
 Auf Basis [dieses Deployment](https://gist.github.com/robertBrem/3df0c7d672a9942bbbddb45d0b6f297a) eine Registry deployen.  
-Um die Registry einzurichten meldet man sich zuerst auf dem Node mit dem entsprechenden Label an. Damit das Repository geschützt ist, erstellen wir einen Benutzer mit einem Passwort und legen diesen im Folder `registry/auth` ab.
+Um die Registry einzurichten meldet man sich zuerst auf dem Node mit dem entsprechenden Label an.  
+**Wichtig:** Es muss der Node verwendet werden der im DNS eingetragen ist.  
+
+Damit das Repository geschützt ist, erstellen wir einen Benutzer mit einem Passwort und legen diesen im Folder `registry/auth` ab.
 ```bash
 mkdir registry
 mkdir registry/images
