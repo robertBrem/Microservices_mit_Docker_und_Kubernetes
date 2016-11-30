@@ -8,9 +8,9 @@ Folgendes Ansible-Playbook von [Github](https://github.com/pstauffer/kubernetes-
 
 ## Cluster aufsetzen
 Key `team[A,B,C].pem` uf den Desktop kopieren.  
-* [Team1](https://www.adesso.de/tausch/exchange.pl?g=vxz5frba)
-* [Team2](https://www.adesso.de/tausch/exchange.pl?g=lggln4qf)
-* [Team3](https://www.adesso.de/tausch/exchange.pl?g=kyfmy7yr)
+* [Team1](https://www.adesso.de/tausch/exchange.pl?g=ev3eyym5)
+* [Team2](https://www.adesso.de/tausch/exchange.pl?g=8mbuakzg)
+* [Team3](https://www.adesso.de/tausch/exchange.pl?g=hfph9mfp)
 ```bash
 chmod 400 team[A,B,C].pem
 ```
