@@ -19,8 +19,6 @@ rawgit.com/robertbrem/Microservices_mit_Docker_und_Kubernetes/master/
 ---
 class: center
 
-# Demo
-
 .image-75[
   [![demo](images/demo.png)](http://adesso.disruptor.ninja:30180)
 ]
